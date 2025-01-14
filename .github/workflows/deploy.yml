@@ -94,3 +94,4 @@ jobs:
           ssh -i ./jlee.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_SERVER }} 'sudo systemctl restart nginx'
           ssh -i ./jlee.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_SERVER }} 'sudo systemctl restart monate-api.service'
           ssh -i ./jlee.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_SERVER }} 'sudo systemctl restart monate-frontend.service'
+          
