@@ -60,6 +60,7 @@ jobs:
           dotnet restore
           dotnet build
           dotnet publish -c Release -o ./publish
+          dotnet tool restore
           dotnet ef add migrations database
           dotnet ef database update
         working-directory: ./MONATE.Web.Server
@@ -93,4 +94,3 @@ jobs:
           ssh -i ./jlee.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_SERVER }} 'sudo systemctl restart nginx'
           ssh -i ./jlee.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_SERVER }} 'sudo systemctl restart monate-api.service'
           ssh -i ./jlee.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_SERVER }} 'sudo systemctl restart monate-frontend.service'
-          
