@@ -3,6 +3,7 @@ import { useLightMode } from '../globals/interface';
 
 const Footer = () => {
     const lightMode = useLightMode();
+    const currentYear = new Date().getFullYear();
 
     return (
         <div style={{
@@ -27,13 +28,13 @@ const Footer = () => {
                         Contact us
                     </div>
                     <div style={{ marginLeft: '1vh', marginTop: '3vh', fontSize: '2.5vh', display: 'flex', flexDirection: 'row', justifyContent: 'left' }}>
-                       <PhoneIcon height='3vh' width='3vh' />&nbsp;+1(201) 620-3178
+                       <PhoneIcon height='3vh' width='3vh' />&nbsp;+1(415) 800 2968
                     </div>
                     <div style={{ marginLeft: '1vh', marginTop: '1vh', fontSize: '2.5vh', display: 'flex', flexDirection: 'row', justifyContent: 'left' }}>
-                        <EmailIcon height='3vh' width='3vh' />&nbsp;monate615@gmail.com
+                        <EmailIcon height='3vh' width='3vh' />&nbsp;jordanlee19930130@gmail.com
                     </div>
                     <div style={{ marginLeft: '1vh', marginTop: '1vh', fontSize: '2.5vh', display: 'flex', flexDirection: 'row', justifyContent: 'left' }}>
-                        <GithubIcon height='3vh' width='3vh' />&nbsp;github.com/monate0615
+                        <GithubIcon height='3vh' width='3vh' />&nbsp;github.com/allpyjs
                     </div>
                 </div>
             </div>
@@ -42,7 +43,7 @@ const Footer = () => {
                 textAlign: 'center', marginTop: '1.5vh', color: lightMode ? '#1f2f2f' : '#dfefef', fontSize: '1.8vh',
                 display: 'flex', flexDirection: 'row', justifyContent: 'center',
             }}>
-                <CopyrightIcon height='2vh' width='2vh' />&nbsp;2024 Copyright by MONATE. All rights reserved.
+                <CopyrightIcon height='2vh' width='2vh' />&nbsp;{currentYear} Copyright by Jordan Lee. All rights reserved.
             </div>
         </div>
     )

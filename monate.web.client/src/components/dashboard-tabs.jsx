@@ -14,7 +14,7 @@ const DashboardTabs = (props) => {
                     <div className={lightMode ? 'tabs-title-light' : 'tabs-title-dark'}>Portfolios</div>
                     <div className={lightMode ? 'tabs-middle-line-light' : 'tabs-middle-line-dark'} />
                     <div className={lightMode ? 'tabs-description-light' : 'tabs-description-dark'} >
-                        Search portfolios what are completed by MONATE team.
+                        Search portfolios what are completed by Jordan.
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ const DashboardTabs = (props) => {
                     <div className={lightMode ? 'tabs-title-light' : 'tabs-title-dark'}>About Us</div>
                     <div className={lightMode ? 'tabs-middle-line-light' : 'tabs-middle-line-dark'} />
                     <div className={lightMode ? 'tabs-description-light' : 'tabs-description-dark'} >
-                        Please read services of MONATE team.
+                        Please read services of Jordan.
                     </div>
                 </div>
             </div>
