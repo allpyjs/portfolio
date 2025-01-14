@@ -61,7 +61,7 @@ jobs:
           dotnet build
           dotnet publish -c Release -o ./publish
           dotnet tool restore
-          dotnet ef add migrations database
+          dotnet ef migrations add database
           dotnet ef database update
         working-directory: ./MONATE.Web.Server
 
